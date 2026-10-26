@@ -67,14 +67,14 @@ const productCategories = [
     description:
       'Customizable sheet metal enclosures for electrical panels, control systems, and industrial electronics.',
     href: '/products/panel-enclosures',
-    image: '/images/products/distribution-box/mseb_box_0.webp',
+    image: '/images/products/panel-enclosure.png',
   },
   {
     title: 'Sheet Metal Fabrication',
     description:
       'Precision laser cutting, CNC bending, and welding services for high-tolerance industrial components.',
     href: '/products/sheet-metal-fabrication',
-    image: '/images/products/generation-meter-box/generation_meter_box_0.webp',
+    image: '/images/facility/sheet-metal-fabrication-2.webp',
   },
   {
     title: 'Cable Management',
@@ -95,7 +95,7 @@ const productCategories = [
     description:
       'Bespoke engineering solutions tailored to specific client requirements — from prototyping to full-scale production.',
     href: '/products/custom-manufacturing',
-    image: '/images/products/agriculture-box/agriculture_box_0.webp',
+    image: '/images/products/custom-manufacturing.png',
   },
 ];
 
@@ -131,7 +131,7 @@ export default function HomePage() {
           className="absolute inset-0 z-0 opacity-30 mix-blend-overlay"
           style={{
             backgroundImage:
-              "url('/images/products/bus-bar-box/bus_bar_box_0.webp')",
+              "url('/images/facility/sheet-metal-fabrication-1.webp')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

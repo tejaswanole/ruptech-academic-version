@@ -15,14 +15,14 @@ const categories = [
     description:
       'Customizable sheet metal enclosures for electrical panels, control systems, and industrial electronics, built to IP/NEMA standards.',
     href: '/products/panel-enclosures',
-    image: '/images/products/distribution-box/mseb_box_0.webp',
+    image: '/images/products/panel-enclosure.png',
   },
   {
     title: 'Sheet Metal Fabrication',
     description:
       'Precision laser cutting, CNC bending, and welding services for high-tolerance industrial components and assemblies.',
     href: '/products/sheet-metal-fabrication',
-    image: '/images/products/generation-meter-box/generation_meter_box_0.webp',
+    image: '/images/facility/sheet-metal-fabrication-2.webp',
   },
   {
     title: 'Cable Management',
@@ -43,7 +43,7 @@ const categories = [
     description:
       'Bespoke engineering solutions tailored to specific client requirements, from design prototyping to full-scale production.',
     href: '/products/custom-manufacturing',
-    image: '/images/products/agriculture-box/agriculture_box_0.webp',
+    image: '/images/products/custom-manufacturing.png',
   },
 ];
 

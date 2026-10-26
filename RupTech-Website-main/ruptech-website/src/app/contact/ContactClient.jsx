@@ -178,7 +178,7 @@ export default function ContactPageClient() {
       <section className="border-t border-outline-variant h-80 w-full bg-surface-container-high">
         <iframe
           title="Ruptech Engineers location, MIDC Ahmednagar"
-          src="https://maps.google.com/maps?q=MIDC%20Ahmednagar%20Maharashtra%20414111&z=14&output=embed"
+          src="https://maps.google.com/maps?q=19.1422482,74.687912&z=17&output=embed"
           className="w-full h-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

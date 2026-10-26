@@ -46,7 +46,7 @@ export default function AboutPage() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('/images/products/storage-racks/slotted_angle_rack_0.webp')",
+              "url('/images/facility/factory-interior-2.webp')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -91,8 +91,8 @@ export default function AboutPage() {
           <div className="relative h-[500px] rounded border border-outline-variant overflow-hidden group p-2 bg-surface-container-lowest">
             <div className="relative w-full h-full rounded overflow-hidden bg-surface-container">
               <Image
-                src="/images/products/feeder-pillar/feeder_pillar_0.webp"
-                alt="Outdoor feeder pillar enclosure built at the Ruptech MIDC Ahmednagar facility"
+                src="/images/facility/sheet-metal-fabrication-2.webp"
+                alt="Sheet metal fabrication work in progress at Ruptech MIDC Ahmednagar facility"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover motion-scale transition-transform duration-300 group-hover:scale-105"

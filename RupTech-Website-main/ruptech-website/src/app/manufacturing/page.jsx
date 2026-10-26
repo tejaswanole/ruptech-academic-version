@@ -104,7 +104,7 @@ export default function ManufacturingPage() {
               className="w-full h-full"
               style={{
                 backgroundImage:
-                  "url('/images/facility/turret-punch.webp')",
+                  "url('/images/facility/factory-interior-3.webp')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}

@@ -7,8 +7,8 @@ export const BUSINESS = {
   email: 'ruptechengineers@gmail.com',
   // Placeholder numbers: replace with the client-confirmed public number before launch.
   // Call and WhatsApp buttons are hidden sitewide if these are left empty.
-  phone: '+91 98765 43210',
-  whatsapp: '919876543210', // country code, no + or spaces
+  phone: '+91 93225 63294',
+  whatsapp: '919322563294', // country code, no + or spaces
   whatsappMessage: 'Hello! I am interested in your products and services.',
   addresses: [
     {

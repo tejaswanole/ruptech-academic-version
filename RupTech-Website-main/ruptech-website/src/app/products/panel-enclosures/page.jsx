@@ -66,7 +66,7 @@ export default function PanelEnclosuresPage() {
 
             <div className="relative h-64 md:h-72 rounded-lg overflow-hidden border border-outline-variant bg-surface-container-low">
               <Image
-                src="/images/products/distribution-box/mseb_box_1.webp"
+                src="/images/products/panel-enclosure.png"
                 alt="100A double circuit M.S. distribution box with bus bars, door open"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
