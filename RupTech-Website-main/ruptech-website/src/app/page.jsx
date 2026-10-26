@@ -67,7 +67,7 @@ const productCategories = [
     description:
       'Customizable sheet metal enclosures for electrical panels, control systems, and industrial electronics.',
     href: '/products/panel-enclosures',
-    image: '/images/products/panel-enclosure.png',
+    image: '/images/products/panel-enclosure.webp',
   },
   {
     title: 'Sheet Metal Fabrication',
@@ -95,7 +95,7 @@ const productCategories = [
     description:
       'Bespoke engineering solutions tailored to specific client requirements — from prototyping to full-scale production.',
     href: '/products/custom-manufacturing',
-    image: '/images/products/custom-manufacturing.png',
+    image: '/images/products/custom-manufacturing.webp',
   },
 ];
 

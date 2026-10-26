@@ -33,7 +33,7 @@ const galleryImages = {
   ],
   distributionBox: [
     { src: '/images/products/distribution-box/mseb_box_0.webp',   alt: 'M.S. Distribution Box 800W×800H' },
-    { src: '/images/products/panel-enclosure.png',   alt: 'Panel Enclosure Box' },
+    { src: '/images/products/panel-enclosure.webp',   alt: 'Panel Enclosure Box' },
   ],
   meterBox: [
     { src: '/images/products/meter-box/meter_boxsinglethree_0.webp', alt: 'Single Phase Energy Meter Box' },
