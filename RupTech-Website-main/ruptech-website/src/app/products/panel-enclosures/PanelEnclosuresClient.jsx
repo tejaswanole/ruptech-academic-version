@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { MessageCircle, ImageOff } from 'lucide-react';
 import SpecTable from '@/components/SpecTable';
@@ -14,7 +14,7 @@ const tabs = [
   { key: 'distributionBox',    label: 'Distribution Boxes' },
   { key: 'meterBox',           label: 'Meter Boxes' },
   { key: 'generationMeterBox', label: 'Generation Meter Boxes' },
-  { key: 'agricultureBox',     label: 'Agriculture Boxes' },
+  { key: 'agricultureBox',     label: 'Agriculture (Agri) Boxes' },
   { key: 'panelBox',           label: 'Panel Boxes' },
 ];
 
@@ -46,6 +46,8 @@ const galleryImages = {
   ],
   agricultureBox: [
     { src: '/images/products/agriculture-box/agriculture_box_0.webp',  alt: 'Agriculture Box' },
+    { src: '/images/products/agri-panel-canopy.webp', alt: 'Agri Panel Enclosure with Canopy' },
+    { src: '/images/products/agri-panel-double-door-canopy.webp', alt: 'Agri Panel Double Door with Canopy' },
   ],
   panelBox: [
     { src: '/images/products/panel-box/panel_box_0.webp',  alt: 'Single Door Panel Box' },
@@ -82,6 +84,19 @@ function ProductImage({ src, alt }) {
 
 export default function PanelEnclosuresClient() {
   const [activeTab, setActiveTab] = useState('distributionBox');
+
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && tabs.some((t) => t.key === hash)) {
+        setActiveTab(hash);
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
+
   const waUrl = whatsappLink('Hello! I am interested in Panel Enclosures & Boxes. Please share pricing details.');
 
   const specCols = [

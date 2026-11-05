@@ -141,12 +141,21 @@ export default function ContactPageClient() {
 
             <div className="bg-surface-container-lowest border border-outline-variant rounded-lg p-md">
               <div className="flex flex-col gap-sm">
-                {phoneLink && (
+                {BUSINESS.phones ? (
+                  BUSINESS.phones.map((p) => (
+                    <a key={p.number} href={p.tel} className="flex items-center gap-sm hover:text-primary transition-colors">
+                      <Phone size={20} className="text-primary" />
+                      <span className="font-mono-label text-mono-label text-on-surface-variant">
+                        <strong className="text-on-surface mr-1">{p.label}:</strong>{p.number}
+                      </span>
+                    </a>
+                  ))
+                ) : phoneLink ? (
                   <a href={phoneLink} className="flex items-center gap-sm hover:text-primary transition-colors">
                     <Phone size={20} className="text-primary" />
                     <span className="font-mono-label text-mono-label text-on-surface-variant">{BUSINESS.phone}</span>
                   </a>
-                )}
+                ) : null}
                 <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-sm hover:text-primary transition-colors">
                   <Mail size={20} className="text-primary" />
                   <span className="font-mono-label text-mono-label text-on-surface-variant">{BUSINESS.email}</span>

@@ -5,9 +5,11 @@ export const BUSINESS = {
   shortName: 'Ruptech Engineers',
   tagline: 'Complete Sheet Metal Product Solutions',
   email: 'ruptechengineers@gmail.com',
-  // Placeholder numbers: replace with the client-confirmed public number before launch.
-  // Call and WhatsApp buttons are hidden sitewide if these are left empty.
-  phone: '+91 93225 63294',
+  phone: '+91 88888 13770',
+  phones: [
+    { label: 'Khapke Sir', number: '+91 88888 13770', tel: 'tel:+918888813770' },
+    { label: 'Office / Inquiries', number: '+91 98227 79698', tel: 'tel:+919822779698' },
+  ],
   whatsapp: '919322563294', // country code, no + or spaces
   whatsappMessage: 'Hello! I am interested in your products and services.',
   addresses: [

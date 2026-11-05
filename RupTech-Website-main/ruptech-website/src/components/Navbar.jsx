@@ -10,6 +10,8 @@ import { BUSINESS, whatsappLink, phoneLink } from '@/lib/constants';
 const productLinks = [
   { label: 'All Products', href: '/products' },
   { label: 'Panel Enclosures & Boxes', href: '/products/panel-enclosures' },
+  { label: 'EV Charger Boxes', href: '/products/panel-enclosures#evChargerBox' },
+  { label: 'Agriculture (Agri) Boxes', href: '/products/panel-enclosures#agricultureBox' },
   { label: 'Sheet Metal Fabrication', href: '/products/sheet-metal-fabrication' },
   { label: 'Cable Management', href: '/products/cable-management' },
   { label: 'Industrial Storage', href: '/products/industrial-storage' },
@@ -32,7 +34,9 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [callOpen, setCallOpen] = useState(false);
   const productsRef = useRef(null);
+  const callRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -41,16 +45,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Close menus on Escape, and the dropdown on any click outside it.
+  // Close menus on Escape, and dropdowns on any click outside them.
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') {
         setProductsOpen(false);
+        setCallOpen(false);
         setMobileOpen(false);
       }
     };
     const onClick = (e) => {
       if (productsRef.current && !productsRef.current.contains(e.target)) setProductsOpen(false);
+      if (callRef.current && !callRef.current.contains(e.target)) setCallOpen(false);
     };
     document.addEventListener('keydown', onKey);
     document.addEventListener('pointerdown', onClick);
@@ -63,6 +69,7 @@ export default function Navbar() {
   const closeMenus = () => {
     setMobileOpen(false);
     setProductsOpen(false);
+    setCallOpen(false);
   };
 
   const isActive = (href) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
@@ -156,13 +163,52 @@ export default function Navbar() {
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center gap-sm">
           {phoneLink && (
-            <a
-              href={phoneLink}
-              className="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
+            <div
+              ref={callRef}
+              className="relative"
+              onMouseEnter={() => setCallOpen(true)}
+              onMouseLeave={() => setCallOpen(false)}
             >
-              <Phone size={16} />
-              Call
-            </a>
+              <button
+                type="button"
+                id="navbar-call-btn"
+                onClick={() => setCallOpen((open) => !open)}
+                className="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 py-1"
+                aria-expanded={callOpen}
+                aria-label="Call options"
+              >
+                <Phone size={16} />
+                Call
+                <ChevronDown size={12} className={`transition-transform duration-200 ${callOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <div
+                className={`absolute top-full right-0 origin-top-right bg-surface-container-lowest border border-outline-variant rounded-lg shadow-lg py-sm min-w-[220px] z-50 transition duration-200 ease-out ${
+                  callOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible pointer-events-none'
+                }`}
+              >
+                <div className="px-md py-xs text-[10px] font-label-caps text-on-surface-variant uppercase border-b border-outline-variant/60">
+                  Select Contact to Call
+                </div>
+                {BUSINESS.phones?.map((p) => (
+                  <a
+                    key={p.number}
+                    href={p.tel}
+                    onClick={() => setCallOpen(false)}
+                    className="flex flex-col px-md py-sm hover:bg-surface-container-low transition-colors group"
+                  >
+                    <span className="font-label-caps text-[11px] text-primary group-hover:underline">{p.label}</span>
+                    <span className="font-mono-label text-mono-label text-on-surface">{p.number}</span>
+                  </a>
+                )) || (
+                  <a
+                    href={phoneLink}
+                    className="block px-md py-sm font-mono-label text-mono-label text-on-surface hover:bg-surface-container-low"
+                  >
+                    {BUSINESS.phone}
+                  </a>
+                )}
+              </div>
+            </div>
           )}
           {waUrl && (
             <a
@@ -243,11 +289,22 @@ export default function Navbar() {
             </div>
           ))}
           <div className="pt-sm mt-sm border-t border-outline-variant flex flex-col gap-sm pb-sm">
-            {phoneLink && (
+            {BUSINESS.phones ? (
+              BUSINESS.phones.map((p) => (
+                <a
+                  key={p.number}
+                  href={p.tel}
+                  className="border border-outline text-on-surface font-label-caps text-label-caps px-md py-sm rounded text-center flex items-center justify-center gap-2 hover:bg-surface-container transition-colors"
+                >
+                  <Phone size={14} className="text-primary" />
+                  <span>Call {p.label}: {p.number}</span>
+                </a>
+              ))
+            ) : phoneLink ? (
               <a href={phoneLink} className="border border-outline text-on-surface font-label-caps text-label-caps px-md py-sm rounded text-center">
-                Call Us
+                Call Us ({BUSINESS.phone})
               </a>
-            )}
+            ) : null}
             {waUrl && (
               <a
                 href={waUrl}

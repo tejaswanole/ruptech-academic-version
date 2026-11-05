@@ -92,14 +92,23 @@ export default function Footer() {
                 {BUSINESS.addresses[1].line1}, {BUSINESS.addresses[1].line2}
               </span>
             </li>
-            {phoneLink && (
+            {BUSINESS.phones ? (
+              BUSINESS.phones.map((p) => (
+                <li key={p.number}>
+                  <a href={p.tel} className="flex items-center gap-2 hover:text-white transition-colors">
+                    <Phone size={14} className="text-primary-fixed opacity-70" />
+                    <span>{p.label}: {p.number}</span>
+                  </a>
+                </li>
+              ))
+            ) : phoneLink ? (
               <li>
                 <a href={phoneLink} className="flex items-center gap-2 hover:text-white transition-colors">
                   <Phone size={14} className="text-primary-fixed opacity-70" />
                   {BUSINESS.phone}
                 </a>
               </li>
-            )}
+            ) : null}
             <li>
               <a
                 href={`mailto:${BUSINESS.email}`}

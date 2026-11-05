@@ -65,7 +65,7 @@ const productCategories = [
   {
     title: 'Panel Enclosures & Boxes',
     description:
-      'Customizable sheet metal enclosures for electrical panels, control systems, and industrial electronics.',
+      'Customizable sheet metal enclosures, EV charger boxes, and agriculture boxes for industrial panels and control systems.',
     href: '/products/panel-enclosures',
     image: '/images/products/panel-enclosure.webp',
   },

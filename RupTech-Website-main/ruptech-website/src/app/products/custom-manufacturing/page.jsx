@@ -16,7 +16,7 @@ const capabilities = [
   'Multi-bend press brake components with tight tolerances',
   'Welded structural assemblies and frames',
   'Custom powder coating in any RAL colour',
-  'Stainless steel & aluminium fabrication',
+  'Steel & Mild Steel fabrication',
   'OEM batch production runs (10 to 10,000+ pieces)',
   'Prototype → Approval → Production workflow',
   'NDA-protected drawing handling and IP confidentiality',

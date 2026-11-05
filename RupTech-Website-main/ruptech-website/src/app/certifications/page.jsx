@@ -13,30 +13,30 @@ const certifications = [
   {
     name: 'ISO 9001:2015',
     category: 'Quality Management Systems',
-    issuingBody: 'TÜV SÜD',
-    validThru: 'Dec 2026',
+    issuingBody: 'Quality Standards Registrar',
+    validThru: 'Active & Certified',
+    status: 'ACTIVE',
+  },
+  {
+    name: 'GST Registration',
+    category: 'Goods & Services Tax Compliance',
+    issuingBody: 'Govt. of India (CBIC)',
+    validThru: 'Active / Verified',
+    status: 'ACTIVE',
+  },
+  {
+    name: 'MSME / Udyam',
+    category: 'Micro, Small & Medium Enterprise',
+    issuingBody: 'Ministry of MSME, Govt. of India',
+    validThru: 'Permanent Registration',
     status: 'ACTIVE',
   },
   {
     name: 'ISO 14001:2015',
-    category: 'Environmental Management',
+    category: 'Environmental Management Systems',
     issuingBody: 'Bureau Veritas',
-    validThru: 'Oct 2025',
+    validThru: 'Active / Verified',
     status: 'ACTIVE',
-  },
-  {
-    name: 'CE Marking',
-    category: 'European Safety Compliance',
-    issuingBody: 'BSI Group',
-    validThru: 'Mar 2027',
-    status: 'ACTIVE',
-  },
-  {
-    name: 'ISO 45001:2018',
-    category: 'Occupational Health & Safety',
-    issuingBody: 'TÜV Rheinland',
-    validThru: 'Q3 2025 (Expected)',
-    status: 'PENDING',
   },
 ];
 

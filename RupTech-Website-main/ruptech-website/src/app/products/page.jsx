@@ -18,6 +18,20 @@ const categories = [
     image: '/images/products/panel-enclosure.webp',
   },
   {
+    title: 'EV Charger Boxes',
+    description:
+      'Weatherproof EV charging enclosures in 600×600×250, 600×900×250, 750×900×250 mm and custom specs with ventilation and security locks.',
+    href: '/products/panel-enclosures#evChargerBox',
+    image: '/images/products/ev-charger-box/ev_charger_box_1.webp',
+  },
+  {
+    title: 'Agriculture (Agri) Boxes',
+    description:
+      'Outdoor agricultural control & pump starter boxes with rain canopies in 600×600×250, 600×900×250, 750×900×250 mm dimensions.',
+    href: '/products/panel-enclosures#agricultureBox',
+    image: '/images/products/agri-panel-canopy.webp',
+  },
+  {
     title: 'Sheet Metal Fabrication',
     description:
       'Precision laser cutting, CNC bending, and welding services for high-tolerance industrial components and assemblies.',

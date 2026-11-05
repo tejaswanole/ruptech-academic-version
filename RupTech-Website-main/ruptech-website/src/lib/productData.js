@@ -17,8 +17,11 @@ export const combiBox = [
 
 // ── 2. EV Charger Box ────────────────────────────────────────────────────────
 export const evChargerBox = [
-  { code: 'RUP-EV-20A',  description: 'EV Charger Box (Big)',   size: '300W × 380H × 150D mm' },
-  { code: 'RUP-EV-10A',  description: 'EV Charger Box (Small)', size: '200W × 250H × 150D mm' },
+  { code: 'RUP-EV-10A',  description: 'EV Charger Box (Small)',                 size: '200W × 250H × 150D mm' },
+  { code: 'RUP-EV-20A',  description: 'EV Charger Box (Big)',                   size: '300W × 380H × 150D mm' },
+  { code: 'RUP-EV-6060', description: 'EV Charging Enclosure Box',              size: '600W × 600H × 250D mm' },
+  { code: 'RUP-EV-6090', description: 'EV Fast Charger Commercial Box',         size: '600W × 900H × 250D mm' },
+  { code: 'RUP-EV-7590', description: 'EV Dual-Port Fast Charger Station Box',  size: '750W × 900H × 250D mm' },
 ];
 
 // ── 3. MCCB Box ───────────────────────────────────────────────────────────────
@@ -30,9 +33,10 @@ export const mcbBox = [
 
 // ── 4. Distribution Box ───────────────────────────────────────────────────────
 export const distributionBox = [
-  { code: 'RUP-DBS-01', description: 'M.S. Distribution Box',  size: '600W × 800H × 250D mm' },
-  { code: 'RUP-DBM-02', description: 'M.S. Distribution Box',  size: '800W × 800H × 250D mm' },
-  { code: 'RUP-DBL-03', description: 'M.S. Distribution Box',  size: '1000W × 800H × 250D mm' },
+  { code: 'RUP-DB-6060', description: 'M.S. Distribution Box',  size: '600W × 600H × 250D mm' },
+  { code: 'RUP-DBS-01',  description: 'M.S. Distribution Box',  size: '600W × 800H × 250D mm' },
+  { code: 'RUP-DBM-02',  description: 'M.S. Distribution Box',  size: '800W × 800H × 250D mm' },
+  { code: 'RUP-DBL-03',  description: 'M.S. Distribution Box',  size: '1000W × 800H × 250D mm' },
   { code: 'RUP-DBEL-04', description: 'M.S. Distribution Box', size: '1000W × 1000H × 250D mm' },
 ];
 
@@ -51,9 +55,12 @@ export const generationMeterBox = [
 
 // ── 7. Agriculture Box ────────────────────────────────────────────────────────
 export const agricultureBox = [
-  { code: 'RUP-AGS-01', description: 'Agriculture Box (Small)',    size: '300W × 400H × 175D mm' },
-  { code: 'RUP-AGM-02', description: 'Agriculture Box (Medium)',   size: '400W × 500H × 175D mm' },
-  { code: 'RUP-AGL-03', description: 'Agriculture Box (Large)',    size: '500W × 600H × 175D mm' },
+  { code: 'RUP-AGS-01',  description: 'Agriculture Box (Small)',               size: '300W × 400H × 175D mm' },
+  { code: 'RUP-AGM-02',  description: 'Agriculture Box (Medium)',              size: '400W × 500H × 175D mm' },
+  { code: 'RUP-AGL-03',  description: 'Agriculture Box (Large)',               size: '500W × 600H × 175D mm' },
+  { code: 'RUP-AG-6060', description: 'Agri Panel Box with Canopy',            size: '600W × 600H × 250D mm' },
+  { code: 'RUP-AG-6090', description: 'Agri Panel Enclosure with Canopy',       size: '600W × 900H × 250D mm' },
+  { code: 'RUP-AG-7590', description: 'Agri Panel Double Door with Canopy',    size: '750W × 900H × 250D mm' },
 ];
 
 // ── 8. Panel Box (Single Door) ────────────────────────────────────────────────
