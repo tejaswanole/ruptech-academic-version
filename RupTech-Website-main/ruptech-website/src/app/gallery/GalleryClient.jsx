@@ -52,7 +52,7 @@ const galleryItems = [
     material: 'Mild Steel / Outdoor CRCA',
     specs: 'Weatherproof IP65 • Heavy-duty Hinges • Glass/Acrylic Display Window',
     finish: 'UV-Resistant Dual-Tone Powder Coating',
-    src: '/images/products/ev-charger-box/ev-box-1.webp',
+    src: '/images/products/ev-charger-box/ev-box-new-1.webp',
     aspect: 'aspect-[3/4]',
   },
   {
@@ -63,7 +63,7 @@ const galleryItems = [
     material: 'CRCA Steel with Component Plate',
     specs: 'Pre-punched DIN Rail Mounts • Cable Gland Knockouts • Earthing Studs',
     finish: 'RAL 7035 Electrostatic Powder Coat',
-    src: '/images/products/ev-charger-box/ev-box-2.webp',
+    src: '/images/products/ev-charger-box/ev-box-new-2.webp',
     aspect: 'aspect-[4/3]',
   },
   {
@@ -346,7 +346,7 @@ const galleryItems = [
     material: 'Heavy-Gauge Outdoor CRCA Steel',
     specs: '750W × 900H × 250D mm • Weatherproof Canopy • Cable Management',
     finish: 'UV-Resistant Electrostatic Powder Coating',
-    src: '/images/products/ev-charger-box/ev-box-3.webp',
+    src: '/images/products/ev-charger-box/ev-box-new-3.webp',
     aspect: 'aspect-[4/3]',
   },
 ];

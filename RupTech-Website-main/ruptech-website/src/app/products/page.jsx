@@ -22,7 +22,7 @@ const categories = [
     description:
       'Weatherproof EV charging enclosures in 600×600×250, 600×900×250, 750×900×250 mm and custom specs with ventilation and security locks.',
     href: '/products/panel-enclosures#evChargerBox',
-    image: '/images/products/ev-charger-box/ev-box-1.webp',
+    image: '/images/products/ev-charger-box/ev-box-new-1.webp',
   },
   {
     title: 'Agriculture (Agri) Boxes',

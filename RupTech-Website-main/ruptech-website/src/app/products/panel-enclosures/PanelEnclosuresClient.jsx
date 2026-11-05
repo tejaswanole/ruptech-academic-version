@@ -23,9 +23,9 @@ const galleryImages = {
     { src: '/images/products/panel-enclosures/mcb_plus_clad_socket_box_0.webp',  alt: 'AC Box 3 Way SP MCB Metal Socket' },
   ],
   evChargerBox: [
-    { src: '/images/products/ev-charger-box/ev-box-1.webp', alt: 'EV Charger Box - Image 1' },
-    { src: '/images/products/ev-charger-box/ev-box-2.webp', alt: 'EV Charger Box - Image 2' },
-    { src: '/images/products/ev-charger-box/ev-box-3.webp', alt: 'EV Charger Box - Image 3' },
+    { src: '/images/products/ev-charger-box/ev-box-new-1.webp', alt: 'EV Charger Box - Image 1' },
+    { src: '/images/products/ev-charger-box/ev-box-new-2.webp', alt: 'EV Charger Box - Image 2' },
+    { src: '/images/products/ev-charger-box/ev-box-new-3.webp', alt: 'EV Charger Box - Image 3' },
   ],
   mcbBox: [
     { src: '/images/products/mcb-box/mccb_box_0.webp', alt: 'MCCB Box' },
