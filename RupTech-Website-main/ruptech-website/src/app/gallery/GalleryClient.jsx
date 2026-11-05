@@ -338,6 +338,17 @@ const galleryItems = [
     src: '/images/products/fire-product-panel.webp',
     aspect: 'aspect-[3/4]',
   },
+  {
+    id: 28,
+    category: 'Panels & Enclosures',
+    label: 'EV Charger Dual-Port Station Enclosure',
+    code: 'RUP-EV-7590',
+    material: 'Heavy-Gauge Outdoor CRCA Steel',
+    specs: '750W × 900H × 250D mm • Weatherproof Canopy • Cable Management',
+    finish: 'UV-Resistant Electrostatic Powder Coating',
+    src: '/images/products/ev-charger-box/ev-box-3.webp',
+    aspect: 'aspect-[4/3]',
+  },
 ];
 
 /* ══════════════════════════════════════════════════════════════════════════
