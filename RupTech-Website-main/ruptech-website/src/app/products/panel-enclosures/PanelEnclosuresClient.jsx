@@ -32,7 +32,7 @@ const galleryImages = {
     { src: '/images/products/mcb-box/mcb_box_0.webp',  alt: '3 Way MCB Box' },
   ],
   distributionBox: [
-    { src: '/images/products/distribution-box/mseb_box_0.webp',   alt: 'M.S. Distribution Box 800W×800H' },
+    { src: '/images/products/distribution-box/panel-incloser-2.webp', alt: 'M.S. Distribution Box' },
     { src: '/images/products/panel-enclosure.webp',   alt: 'Panel Enclosure Box' },
   ],
   meterBox: [

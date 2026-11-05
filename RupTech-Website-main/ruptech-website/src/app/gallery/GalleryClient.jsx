@@ -74,7 +74,7 @@ const galleryItems = [
     material: 'CRCA Mild Steel (1.6mm)',
     specs: '800W × 800H × 250D mm • Busbar Chamber • Dual Door Locks',
     finish: '7-Tank Pretreatment Powder Coated',
-    src: '/images/products/distribution-box/mseb_box_0.webp',
+    src: '/images/products/distribution-box/panel-incloser-2.webp',
     aspect: 'aspect-[4/3]',
   },
   {
