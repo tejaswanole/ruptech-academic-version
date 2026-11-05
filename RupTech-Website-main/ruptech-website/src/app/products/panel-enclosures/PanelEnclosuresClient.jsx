@@ -23,9 +23,8 @@ const galleryImages = {
     { src: '/images/products/panel-enclosures/mcb_plus_clad_socket_box_0.webp',  alt: 'AC Box 3 Way SP MCB Metal Socket' },
   ],
   evChargerBox: [
-    { src: '/images/products/ev-charger-box/ev_charger_box_1.webp', alt: 'EV Charger Box, front with door closed' },
-    { src: '/images/products/ev-charger-box/ev_charger_box_2.webp', alt: 'EV Charger Box with door open' },
-    { src: '/images/products/ev-charger-box/ev_charger_box_0.webp', alt: 'EV Charger Box, side with ventilation grille' },
+    { src: '/images/products/ev-charger-box/ev_charger_box_1.webp', alt: 'EV Charger Box' },
+    { src: '/images/products/ev-charger-box/ev_charger_box_0.webp', alt: 'EV Charger Station Enclosure' },
   ],
   mcbBox: [
     { src: '/images/products/mcb-box/mccb_box_0.webp', alt: 'MCCB Box' },

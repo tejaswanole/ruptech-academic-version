@@ -29,7 +29,7 @@ const caseStudies = [
     solution: 'CNC laser-cut enclosures with powder coat + zinc phosphating pre-treatment for outdoor durability.',
     outcome: 'Successfully supplied enclosures for 50+ charging stations across Maharashtra.',
     featured: false,
-      image: '/images/clients/EV_Charger.jpeg',
+      image: '/images/products/ev-charger-box/ev_charger_box_1.webp',
   },
 ];
 
